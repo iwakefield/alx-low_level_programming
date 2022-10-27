@@ -6,7 +6,7 @@
  * @src: path to copy from
  * Return: pointer to dest
  */
-char *_strcat(char *dest, char *src);
+char *_strcat(char *dest, char *src)
 {
 	int y;
 	int z;
@@ -16,6 +16,7 @@ char *_strcat(char *dest, char *src);
 	{
 		y++;
 	}
+	
 	z = 0;
 	while (src[z] != '\0')
 	{
@@ -24,5 +25,6 @@ char *_strcat(char *dest, char *src);
 		z++;
 	}
 	dest[y] = '\0';
+
 	return (dest);
 }
