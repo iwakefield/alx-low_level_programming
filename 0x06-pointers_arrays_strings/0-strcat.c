@@ -16,7 +16,6 @@ char *_strcat(char *dest, char *src)
 	{
 		y++;
 	}
-	
 	z = 0;
 	while (src[z] != '\0')
 	{
@@ -25,6 +24,5 @@ char *_strcat(char *dest, char *src)
 		z++;
 	}
 	dest[y] = '\0';
-
 	return (dest);
 }
