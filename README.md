@@ -1,2 +1,2 @@
-low level programming project repo
-Ps: C 
+low level programming project repo 
+Ps: C language
