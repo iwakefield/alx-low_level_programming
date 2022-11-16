@@ -1,3 +1,58 @@
+#include "dog.h"
+#include <stdlib.h>
+
+int _strlen(char *str);
+char *_strcopy(char *dest, char *src);
+dog_t *new_dog(char *name, float age, char *owner);
+
+
+/**
+ * _strlen - returns the length of a string
+ * @str: is a string
+ * Return: length
+ */
+int _strlen(char *str)
+{
+	int len = 0;
+
+	while (*str != '\0')
+	{
+		len++;
+		str++;
+	}
+
+	return (len);
+}
+
+
+/**
+ * _strcopy - copies the string pointed to by src
+ * @dest: destination
+ * @src: source
+ * Return: string
+ */
+char *_strcopy(char *dest, char *src)
+{
+	int len = 0;
+
+	while (*(src + len) != '\0')
+	{
+		*(dest + len) = *(src + len);
+		len++;
+	}
+
+	*(dest + len) = '\0';
+	return (dest);
+}
+
+/**
+ * new_dog - creates a new dog
+ * @name: name of dog
+ * @age: age of dog
+ * @owner: owner of dog
+ * Return: new struct dog
+ */
+
 dog_t *new_dog(char *name, float age, char *owner)
 {
 	dog_t *doggo;
